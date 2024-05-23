@@ -1,0 +1,12 @@
+.footer{
+    background-color: #102C5B;
+}
+
+.footer__list a{
+    color: white;
+    text-decoration: none;
+}
+
+.footer__list a:hover{
+    text-decoration: underline;
+}
