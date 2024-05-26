@@ -1,3 +1,37 @@
+/*navbar*/
+.navbar {
+    background-color: white;
+}
+
+.first-row {
+    border-bottom: 1px solid #DDDDDDB5;
+}
+
+.first-row .navbar-text {
+    margin-right: 15px;
+}
+
+.first-row a {
+    color: #333;
+    margin-right: 15px;
+    font-size: 18px;
+}
+
+.second-row .navbar-brand {
+    max-height: 50px;
+}
+
+.second-row .nav-link {
+    color: #333;
+    margin: 0 45px;
+}
+
+.second-row .btn {
+    background-color: #1BB275;
+    border: none;
+}
+
+
 .footer{
     background-color: #102C5B;
 }
@@ -9,4 +43,109 @@
 
 .footer__list a:hover{
     text-decoration: underline;
+}
+
+.footer__btn {
+    width: 30px;
+    height: 30px;
+    padding: 6px 0px;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 12px;
+    background-color: transparent;
+}
+
+
+/*Header*/
+.header{
+    height:650px;
+    color:white;
+    /* text-align: justify; */
+    /* align-items: center;
+    justify-content: center;
+    text-align: center; */
+    display:flex;
+    /* max-width: 1441px; */
+}
+
+.header::before {
+    content: '';
+	background-image: url('img/imager.png');
+	background-repeat: no-repeat;
+	background-position: top right;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	z-index: -1;
+	right: 0;
+	width: 60%;
+    background-size: contain;
+}
+
+.header::after {
+    width:100%;
+    height: 100%;
+    height: 650px;
+    content:'';
+    background: rgb(2,0,36);
+    background: linear-gradient(100deg, rgba(16,44,91,1) 50%, rgba(16,44,91,0) 70%);
+    top:0;
+    left:0;
+    z-index: -1;
+    position: absolute;
+
+}
+
+.header_main-button {
+    background-color: #1BB275;
+    color: white;
+    border-radius: 5px;
+    padding: 10px 20px;
+    text-decoration: none;
+    z-index: 1;
+}
+
+.header_2nd-button {
+    background-color: white;
+    color:#102C5B;
+    border-radius: 5px;
+    padding: 10px 20px;
+    text-decoration: none;
+    z-index: 1;
+}
+
+.holdout {
+    position:absolute;
+    background-image: url("img/2nd_pic.png");
+    background-repeat: no-repeat;
+    background-position:right;
+    background-color: aqua;
+    overflow: hidden;
+    /* height:auto; */
+    /* padding-bottom: 15%;
+    padding-top: 15%; */
+    width:100%;
+    /* padding-right: 20%; */
+
+}
+
+.box {
+    position: absolute;
+    background-color: #1BB275; /* Fallback color */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    /* border: 2px solid black; Adjusted */
+    /* padding: 20px; Added */
+    box-sizing: border-box;
+    overflow:hidden; /* Add scrollbar when content overflows */
+    max-width: 15%; /* Added */
+    margin: auto; /* Center the box */
+    
+}
+
+.box-img {
+    width: 50%; /* Adjust the size as needed */
+    height: 20%;
+    margin-bottom: 5%; /* Space between image and text */
 }

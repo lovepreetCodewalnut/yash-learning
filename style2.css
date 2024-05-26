@@ -1,0 +1,198 @@
+a {
+    text-decoration: none;
+}
+/*navbar*/
+.navbar {
+    background-color: white;
+}
+
+.first-row {
+    border-bottom: 1px solid #DDDDDDB5;
+}
+
+.first-row .navbar-text {
+    margin-right: 15px;
+}
+
+.first-row a {
+    color: #333;
+    margin-right: 15px;
+    font-size: 18px;
+}
+
+.second-row .navbar-brand {
+    max-height: 50px;
+}
+
+.second-row .nav-link {
+    color: #333;
+    margin: 0 45px;
+}
+
+.second-row .btn {
+    background-color: #1BB275;
+    border: none;
+}
+
+.footer {
+    background-color: #102C5B;
+}
+
+.footer__list a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer__list a:hover {
+    text-decoration: underline;
+}
+
+.footer__btn {
+    width: 30px;
+    height: 30px;
+    padding: 6px 0px;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 12px;
+    background-color: transparent;
+}
+
+.footer_hold-link {
+    color: #ffffff;
+}
+
+/*Header*/
+.header {
+    height: 650px;
+    color: white;
+    display: flex;
+    position: relative;
+}
+
+h1 {
+    font-size: 3em; /* Adjust the size as needed */
+}
+
+.header::before {
+    content: '';
+    background-image: url('img/imager.png');
+    background-repeat: no-repeat;
+    background-position: top right;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    right: 0;
+    width: 60%;
+    background-size: contain;
+}
+
+.header::after {
+    width: 100%;
+    height: 100%;
+    content: '';
+    background: rgb(2, 0, 36);
+    background: linear-gradient(100deg, rgba(16, 44, 91, 1) 50%, rgba(16, 44, 91, 0) 70%);
+    top: 0;
+    left: 0;
+    z-index: -1;
+    position: absolute;
+}
+
+.header_main-button {
+    background-color: #1BB275;
+    color: white;
+    border-radius: 5px;
+    padding: 10px 20px;
+    text-decoration: none;
+    z-index: 1;
+}
+
+.header_2nd-button {
+    background-color: white;
+    color: #102C5B;
+    border-radius: 5px;
+    padding: 10px 20px;
+    text-decoration: none;
+    z-index: 1;
+}
+
+.holdout {
+    overflow: hidden;
+    padding: 100px 0;
+    width: 100%;
+    position: relative;
+}
+
+.holdout img {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+/* ... existing body ... */
+
+h2 {
+    font-size: 3em;
+}
+
+
+.box {
+    background-color: #1BB275;
+    color: white;
+    width: 20%;
+    padding: 20px;
+    text-align: center;
+    position: absolute;
+    right: 10%;
+    top: 50%;
+    transform: translateY(-50%);
+    max-height: 400px; /* Ensures the height limit for scrolling */
+    overflow: hidden; /* Hides overflow initially */
+}
+
+.smaller-image {
+    width: 50%; /* Adjust as needed */
+    height: auto;
+}
+
+.swiper-container {
+    width: 100%;
+    height: 300px; /* Adjust as needed */
+    max-height: 100%; /* Ensure it respects the max height of the parent */
+    overflow: hidden; /* Hides overflow initially */
+}
+
+.swiper-wrapper {
+    height: auto;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.box-img {
+    width: 20%;
+    height: 20%;
+    margin-bottom: 20px;
+}
+
+.swiper-scrollbar {
+    background: rgba(0, 0, 0, 0.1); /* Light grey background for scrollbar */
+    border-radius: 10px; /* Rounded corners for scrollbar */
+}
