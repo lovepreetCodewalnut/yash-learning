@@ -135,7 +135,7 @@
                 </div>
                 <div class="col-4">
                     <h3 class="text-white">Subscribe Newsletter</h3>
-                    <form>
+                    <form id="newsletter-form">
                             
                         <div class="input-group-append">
                             <input type="email" id="email_input",name="email_input">
@@ -165,5 +165,10 @@
             </div>
         </div>
     </footer>
+    <script>
+        document.getElementById('submitButton').addEventListener('click', function() {
+            document.getElementById('newsletter-form').submit();
+        });
+    </script>
 </body>
 </html>
