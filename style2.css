@@ -6,8 +6,12 @@ a {
     background-color: white;
 }
 
+
+
 .first-row {
-    border-bottom: 1px solid #DDDDDDB5;
+    /* border-bottom: 1px solid #DDDDDDB5; */
+    width:100vw;
+
 }
 
 .first-row .navbar-text {
