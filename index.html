@@ -10,31 +10,17 @@
     <link href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" rel="stylesheet">
 </head>
 <body>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            var swiper = new Swiper('.swiper-container', {
-                direction: 'vertical',
-                slidesPerView: 'auto',
-                freeMode: true,
-                scrollbar: {
-                    el: '.swiper-scrollbar',
-                    draggable: true,
-                },
-                mousewheel: true,
-            });
-        });
-    </script>
+   
 
     <nav class="navbar px-2">
         <div class="container-lg">
             <!-- First Row -->
-            <div class="row w-100 first-row">
+            <div class="row w-100 d-none d-lg-flex justify-content-between contact-info">
                 <div class="col-lg-4">
                     <span class="navbar-text"><i class="bi bi-envelope"></i> enquiries@info.com</span>
                     <span class="navbar-text"><i class="bi bi-telephone"></i> 1-800-555-1234</span>
                 </div>
-                <div class="col-lg-8 d-flex justify-content-end">
+                <div class="col-lg-8 d-flex justify-content-end social-icons gap-3">
                     <a href="https://www.facebook.com/"><i class="bi bi-facebook"></i></a>
                     <a href="https://x.com/codewalnut"><i class="bi bi-twitter"></i></a>
                     <a href="https://www.instagram.com/teamwalnut_/"><i class="bi bi-instagram"></i></a>
@@ -42,24 +28,27 @@
                 </div>
             </div>
         </div>
-        <div class="container-fluid" style="border-top: #DDDDDDB5 solid 1px;"></div>
+        <div class="container-fluid" style="border-top: #DDDDDDB5 solid 1px;">
+
+        
         <div class="container-lg">
             <!-- Second Row -->
             <div class="row w-100 second-row pt-3">
                 <div class="col-lg-2">
                     <img src="img/LogoHere.png" alt="Logo" class="navbar-brand">
                 </div>
-                <div class="col-lg-8 text-center px-1">
+                <div class="col-lg-8 text-center px-1 d-none d-lg-block">
                     <a class="nav-link d-inline" href="#">Home</a>
                     <a class="nav-link d-inline px-1" href="https://www.codewalnut.com/nextjs-development-services">Services</a>
                     <a class="nav-link d-inline px-1" href="https://www.codewalnut.com/insights">Insights</a>
                     <a class="nav-link d-inline px-1" href="https://www.codewalnut.com/learn">Learn</a>
                 </div>
-                <div class="col-lg-2 text-end">
+                <div class="col-lg-2 text-end d-none d-lg-block">
                     <button class="btn btn-primary">Try for Free</button>
                 </div>
             </div>
         </div>
+    </div>
         </nav>
     </nav>
 
@@ -71,9 +60,9 @@
                     <div>
                         <p class="text-white">WE OFFER PROFESSIONAL PROOFREADING</p>
                         <h2 class="text-white">Professional Editing and proofreading at your fingertips</h2>
-                        <div class="header_btn pt-30 d-flex align-items-center gap-4">
-                            <a href="https://www.codewalnut.com/" class="header_main-button">Calculated Price</a>
-                            <a href="https://www.codewalnut.com/" class="header_2nd-button">Free samples</a>
+                        <div class="header_btn d-flex align-items-center gap-4">
+                            <a href="https://www.codewalnut.com/" class="header_2nd-button">Calculated Price</a>
+                            <a href="https://www.codewalnut.com/" class="header_main-button">Free samples</a>
                         </div>
                     </div>
                 </div>
@@ -85,13 +74,13 @@
     <section class="holdout position-relative">
         <div class="container-lg h-100">
             <div class="row h-100 align-items-center">
-                <div class="col-lg-6 h-100 d-flex flex-column justify-content-center">
-                    <div>
+                <div class="col-lg-6 info h-100 d-flex flex-column justify-content-center">
+                    <div class="text-start text-md-center">
                         <p style="color:#1BB275">WE ARE PROFESSIONAL</p>
                         <h1 style="color:#102C5B">We offer professional Proofreading and Editing services for students and professionals</h1>
                         <p style="color:#999999">Proofers offer a wide variety of tailor-made services to meet your individual needs. Proofers offer a number of core services which include proofreading and copy-editing (thesis, dissertations, essays reports), document formatting and plagiarism checking. All our editors are SfEP members and hold at least a Master’s degree from a reputable UK University.</p>
-                        <div class="header_btn pt-30 d-flex gap-4">
-                            <a href="https://www.codewalnut.com/" class="header_main-button">Get Started         <i class="bi bi-arrow-right"></i></a>
+                        <div class="header_btn  d-flex text-start gap-4 justify-content-md-between">
+                            <a href="https://www.codewalnut.com/" class="holdout-button">Get Started         &rarr;</a>
                         </div>
                     </div>
                 </div>
@@ -100,23 +89,24 @@
                 </div>
             </div>
         </div>
-        <div class="box text-center position-absolute">
-            <div class="swiper-container">
+        <div class="box position-absolute">
+            <div class="swiper mySwiper">
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div class="box-img">
-                            <img src="img/Group.png" class="img-fluid">
-                        </div>
-                        <p>We offer proofreading, copy-editing, Thesis, Dissertations, Essays & Reports</p>
+                  <div class="swiper-slide">
+                    <div class="box-img">
+                        <img src="img/Group.png" class="img-fluid">
                     </div>
-                    <!-- Add more slides as needed -->
-                    <div class="swiper-slide">
-                        <p>Additional content 1</p>
+                    <p>We offer proofreading, copy-editing, Thesis, Dissertations, Essays & Reports</p>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="box-img">
+                        <img src="img/Group.png" class="img-fluid">
                     </div>
+                    <p>Second Slide</p>
+                  </div>
                 </div>
-                <!-- Add Scrollbar -->
-                <div class="swiper-scrollbar"></div>
-            </div>
+                <div class="swiper-pagination"></div>
+              </div>
         </div>
     </section>
 
@@ -126,53 +116,87 @@
             <div class="row">
                 <div class="col-5">
                     <img src="./img/LogoHere.svg" alt="">
-                    <p class="text-white pt-4">Proofers offer a wide variety of tailor-made services to meet your individual needs. Proofers offer a number of core services which include proofreading and copy-editing (thesis, dissertations, essays reports), document formatting and plagiarism</p>
+                    <p class="text-white pt-4 text-large">Proofers offer a wide variety of tailor-made services to meet your individual needs. Proofers offer a number of core services which include proofreading and copy-editing (thesis, dissertations, essays reports), document formatting and plagiarism</p>
                 </div>
                 <div class="col-3 text-left">
-                    <h3 class="text-white">Quick Links</h3>
+                    <h3 class="text-white text-large">Quick Links</h3>
                     <ul class="footer__list list-unstyled">
-                        <li><a href="">Home</a></li>
-                        <li class="pt-3"><a href="">Services</a></li>
-                        <li class="pt-3"><a href="">Pricing</a></li>
-                        <li class="pt-3"><a href="">Submit Order</a></li>
+                        <li class="pt-3 text-large"><a href="">Home</a></li>
+                        <li class="pt-3 text-large"><a href="">Services</a></li>
+                        <li class="pt-3 text-large"><a href="">Pricing</a></li>
+                        <li class="pt-3 text-large"><a href="">Submit Order</a></li>
                     </ul>
                 </div>
                 <div class="col-4">
-                    <h3 class="text-white">Subscribe Newsletter</h3>
+                    <h3 class="text-white pb-3">Subscribe Newsletter</h3>
                     <form id="newsletter-form">
-                            
-                        <div class="input-group-append">
-                            <input type="email" id="email_input",name="email_input">
-                            <button class="btn btn-success" type="button" id="submitButton">
-                                <i class="bi bi-send"></i>
-                            </button>
+                            <!--faded color until valid email, call js code in the -->
+                        <div class="input-group">
+                            <input type="email" id="emailInput" class="form-control text-large" placeholder="Enter your email">
+                            <button class="btn btn-success" type="button" id="submitButton"><i class="bi bi-send"></i></button>
                         </div>
+                        <div class="error-message text-danger mt-2">Please enter a valid email address.</div>
+                        <div class="success-message text-success mt-2">Email was sent successfully!</div>
                         
                     </form>
                     <ul class="footer__list list-unstyled pt-3">
                         <span><button class="footer__btn"><a href="https://www.facebook.com/"><i class="bi bi-facebook"></i></a></button></span>
-                        <span><button class="footer__btn"><a href="https://www.instagram.com/teamwalnut_/"><i class="bi bi-instagram"></i></button></span>
-                        <span><button class="footer__btn"><a href="https://x.com/codewalnut"><i class="bi bi-twitter"></i></button></span>
-                        <span><button class="footer__btn"><a href="https://in.pinterest.com/vcodewalnut/"><i class="bi bi-pinterest"></i></button></span>
+                        <span><button class="footer__btn"><a href="https://www.instagram.com/teamwalnut_/"><i class="bi bi-instagram"></i></a></button></span>
+                        <span><button class="footer__btn"><a href="https://x.com/codewalnut"><i class="bi bi-twitter"></i></a></button></span>
+                        <span><button class="footer__btn"><a href="https://in.pinterest.com/vcodewalnut/"><i class="bi bi-pinterest"></i></a></button></span>
                     </ul>
                 </div>
             </div>
 
-            <div class="row" style="border-top: 1px solid #999999; padding-top: 10px;">
-                <div class="col-lg-4 text-left">
+            <div class="pt-3 d-md-flex justify-content-md-between" style="border-top: 1px solid #999999;">
                     <a class="footer_hold-link" href="https://www.codewalnut.com/privacy-policy">Copyright: © 2022 | All Rights Reserved</a>
-                </div>
-                <div class="col-lg-8 text-end">
+                <div class="pt-3 pt-md-0">
                     <a class="footer_hold-link" href="https://www.codewalnut.com/privacy-policy">Privacy Policy</a>
                     <a class="footer_hold-link" href="#">Terms and Conditions</a>
                 </div>
             </div>
         </div>
     </footer>
-    <script>
-        document.getElementById('submitButton').addEventListener('click', function() {
-            document.getElementById('newsletter-form').submit();
-        });
-    </script>
+    
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var swiper = new Swiper(".mySwiper", {
+      spaceBetween: 30,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+    });
+</script>
+<script>
+    document.getElementById('submitButton').addEventListener('click', function() {
+        var emailInput = document.getElementById('emailInput').value;
+        var errorMessage = document.querySelector('.error-message');
+        var successMessage = document.querySelector('.success-message');
+
+        errorMessage.style.display = 'none';
+        successMessage.style.display = 'none';
+
+        if (emailInput === '' || !validateEmail(emailInput)) {
+            errorMessage.textContent = 'Please enter a valid email.';
+            errorMessage.style.display = 'block';
+        }
+        else {
+            successMessage.style.display = 'block';
+        }
+    });
+
+    function validateEmail(email) {
+        var re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return re.test(email);
+    }
+</script>
 </body>
 </html>
