@@ -226,12 +226,23 @@ input[type=email] {
 }
 
 .text-large {
-    font-size: 150%;
+    font-size: 125%;
 }
 
 
 .btn .btn-success {
     padding-left: 10px;
+}
+
+.footer__btn {
+    width: 50px; /* Increase the width of the buttons */
+    height: 50px; /* Increase the height of the buttons */
+    padding: 10px; /* Increase padding to make the icons larger */
+    border-radius: 25px; /* Ensure buttons remain circular */
+    text-align: center;
+    font-size: 24px; /* Increase the font size for larger icons */
+    background-color: transparent;
+    margin: 0 10px; /* Add horizontal margin to spread buttons evenly */
 }
 
 @media only screen and (max-width: 568px) {
@@ -243,8 +254,7 @@ input[type=email] {
         align-items: center;
         justify-content: center;
         vertical-align: middle;
-        /* Copy any other styles from .btn-group-vertical as needed */
-        padding-top: 10%;
+        /* Copy any other styles from .btn-group-vertical as needed */  
     }
     
     .header_main-button {
